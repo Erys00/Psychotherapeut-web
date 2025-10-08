@@ -22,7 +22,7 @@ export default function Header() {
           </div>
           
           {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden lg:flex space-x-6">
             <button onClick={() => scrollToSection('hero')} className="text-gray-700 hover:text-teal-600 transition-colors">
               Start
             </button>
@@ -32,17 +32,23 @@ export default function Header() {
             <button onClick={() => scrollToSection('specializations')} className="text-gray-700 hover:text-teal-600 transition-colors">
               Specjalizacje
             </button>
-            <button onClick={() => scrollToSection('approach')} className="text-gray-700 hover:text-teal-600 transition-colors">
-              Metody
+            <button onClick={() => scrollToSection('pricing')} className="text-gray-700 hover:text-teal-600 transition-colors">
+              Cennik
             </button>
-            <button onClick={() => scrollToSection('contact')} className="text-gray-700 hover:text-teal-600 transition-colors">
+            <button onClick={() => scrollToSection('faq')} className="text-gray-700 hover:text-teal-600 transition-colors">
+              FAQ
+            </button>
+            <button onClick={() => scrollToSection('blog')} className="text-gray-700 hover:text-teal-600 transition-colors">
+              Blog
+            </button>
+            <button onClick={() => scrollToSection('contact')} className="text-gray-700 hover:text-teal-600 transition-colors font-semibold">
               Kontakt
             </button>
           </div>
 
           {/* Mobile Menu Button */}
           <button 
-            className="md:hidden text-gray-700"
+            className="lg:hidden text-gray-700"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -57,20 +63,47 @@ export default function Header() {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 space-y-4">
-            <button onClick={() => scrollToSection('hero')} className="block text-gray-700 hover:text-teal-600 transition-colors">
+          <div className="lg:hidden mt-4 pb-4 space-y-3">
+            <button onClick={() => scrollToSection('hero')} className="block w-full text-left text-gray-700 hover:text-teal-600 transition-colors">
               Start
             </button>
-            <button onClick={() => scrollToSection('about')} className="block text-gray-700 hover:text-teal-600 transition-colors">
+            <button onClick={() => scrollToSection('about')} className="block w-full text-left text-gray-700 hover:text-teal-600 transition-colors">
               O mnie
             </button>
-            <button onClick={() => scrollToSection('specializations')} className="block text-gray-700 hover:text-teal-600 transition-colors">
+            <button onClick={() => scrollToSection('specializations')} className="block w-full text-left text-gray-700 hover:text-teal-600 transition-colors">
               Specjalizacje
             </button>
-            <button onClick={() => scrollToSection('approach')} className="block text-gray-700 hover:text-teal-600 transition-colors">
-              Metody
+            <button onClick={() => scrollToSection('approach')} className="block w-full text-left text-gray-700 hover:text-teal-600 transition-colors">
+              Metody terapeutyczne
             </button>
-            <button onClick={() => scrollToSection('contact')} className="block text-gray-700 hover:text-teal-600 transition-colors">
+            <button onClick={() => scrollToSection('first-session')} className="block w-full text-left text-gray-700 hover:text-teal-600 transition-colors">
+              Pierwsza sesja
+            </button>
+            <button onClick={() => scrollToSection('timeline')} className="block w-full text-left text-gray-700 hover:text-teal-600 transition-colors">
+              Proces terapii
+            </button>
+            <button onClick={() => scrollToSection('testimonials')} className="block w-full text-left text-gray-700 hover:text-teal-600 transition-colors">
+              Opinie
+            </button>
+            <button onClick={() => scrollToSection('credentials')} className="block w-full text-left text-gray-700 hover:text-teal-600 transition-colors">
+              Kwalifikacje
+            </button>
+            <button onClick={() => scrollToSection('gallery')} className="block w-full text-left text-gray-700 hover:text-teal-600 transition-colors">
+              Gabinet
+            </button>
+            <button onClick={() => scrollToSection('pricing')} className="block w-full text-left text-gray-700 hover:text-teal-600 transition-colors">
+              Cennik
+            </button>
+            <button onClick={() => scrollToSection('faq')} className="block w-full text-left text-gray-700 hover:text-teal-600 transition-colors">
+              FAQ
+            </button>
+            <button onClick={() => scrollToSection('blog')} className="block w-full text-left text-gray-700 hover:text-teal-600 transition-colors">
+              Blog
+            </button>
+            <button onClick={() => scrollToSection('resources')} className="block w-full text-left text-gray-700 hover:text-teal-600 transition-colors">
+              Materiały
+            </button>
+            <button onClick={() => scrollToSection('contact')} className="block w-full text-left text-gray-700 hover:text-teal-600 transition-colors font-semibold">
               Kontakt
             </button>
           </div>
